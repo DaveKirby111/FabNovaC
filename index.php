@@ -7,6 +7,7 @@
 
     <title>Fabula Nova Crystallis</title>
 
+    <link rel="stylesheet" href="resources/css/reset.css">
     <link rel="stylesheet" href="resources/css/styles.css">
 </head>
 <body>
