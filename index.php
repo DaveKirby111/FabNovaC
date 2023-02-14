@@ -1,26 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Fabula Nova Crystallis</title>
-
-    <link rel="stylesheet" href="resources/css/reset.css">
-    <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
+<?php require "header.php"; ?>
 
 <header>
     <h1>header</h1>
 </header>
 
-<nav></nav>
+<?php require "nav.php"; ?>
 
-<main></main>
+<main>
 
-<footer></footer>
-    
-</body>
-</html>
+<div class="content">
+
+</div>
+
+</main>
+
+<?php require "footer.php"; ?>

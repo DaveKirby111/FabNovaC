@@ -1,6 +1,45 @@
 @import '_var';
 
+/*------------
+
+1. HEADER
+2. NAV
+3. CONTENT
+4. FOOTER
+
+--------------*/
+
+header, nav, main, footer {
+    border: 2px solid black;
+}
+
+// HEADER
+
 h1 {
     text-align: center;
     font-size: 30px;
+}
+
+// NAV
+
+// CONTENT
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
+// FOOTER
+
+footer {
+    display: flex;
+
+    .info {
+        margin-left: auto;
+    }
 }
