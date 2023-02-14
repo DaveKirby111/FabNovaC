@@ -1,0 +1,13 @@
+@mixin list {
+    ul {
+        list-style-type: none;
+
+        li {
+            text-transform: capitalize;
+            
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -9,18 +9,34 @@
 
 --------------*/
 
-header, nav, main, footer {
+header, nav, main, li, footer {
     border: 2px solid black;
 }
 
 // HEADER
 
 h1 {
-    text-align: center;
     font-size: 30px;
 }
 
 // NAV
+
+nav {
+    @include list;
+
+   ul {
+
+    li {
+        display: inline-block;
+        margin-left: -4px;
+
+        a {
+            display: block;
+            padding: 10px;
+        }
+    }
+   }
+}
 
 // CONTENT
 
@@ -32,14 +48,28 @@ main {
 
 .content {
     flex: 1;
+    padding: 20px;
+
+    h2 {
+        text-align: center;
+    }
 }
 
 // FOOTER
 
 footer {
     display: flex;
+    
+    .contact {
+        border-right: 2px solid black;
+
+        a {
+            text-decoration: none;
+        }
+    }
 
     .info {
         margin-left: auto;
+        border-left: 2px solid black;
     }
 }

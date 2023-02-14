@@ -1,7 +1,7 @@
 <footer>
 
     <div class="contact">
-        <a href="http://">contact</a>
+        <a href="contact.php">contact</a>
     </div>
 
     <div class="info">

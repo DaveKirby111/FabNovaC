@@ -6,13 +6,30 @@
 4. FOOTER
 
 --------------*/
-header, nav, main, footer {
+header, nav, main, li, footer {
   border: 2px solid black;
 }
 
 h1 {
-  text-align: center;
   font-size: 30px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  text-transform: capitalize;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-left: -4px;
+}
+nav ul li a {
+  display: block;
+  padding: 10px;
 }
 
 main {
@@ -23,11 +40,22 @@ main {
 
 .content {
   flex: 1;
+  padding: 20px;
+}
+.content h2 {
+  text-align: center;
 }
 
 footer {
   display: flex;
 }
+footer .contact {
+  border-right: 2px solid black;
+}
+footer .contact a {
+  text-decoration: none;
+}
 footer .info {
   margin-left: auto;
+  border-left: 2px solid black;
 }
