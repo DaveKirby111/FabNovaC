@@ -1,8 +1,6 @@
 <?php require "header.php"; ?>
 
-<header>
-    <h1>fabula nova crystallis</h1>
-</header>
+<?php require "banner.php"; ?>
 
 <?php require "nav.php"; ?>
 
