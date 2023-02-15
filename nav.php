@@ -6,8 +6,9 @@
     $nav = [
         "/" => "home", 
         "lore.php" => "lore",
+        "games.php" => "games",
         "characters.php" => "characters",
-        "gallery.php" => "gallery"
+        "gallery.php" => "gallery",
     ];
 
     foreach($nav as $key => $link) :
