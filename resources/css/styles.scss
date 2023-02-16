@@ -9,18 +9,15 @@
 
 --------------*/
 
-header, nav, main, li, footer {
+header, nav, main, li, section, footer {
     border: 2px solid black;
-}
-
-body {
-    text-transform: capitalize;
 }
 
 // HEADER
 
 h1 {
-    font-size: 30px;
+    font-size: 40px;
+    text-transform: capitalize;
 }
 
 // NAV
@@ -39,6 +36,7 @@ nav {
             padding: 10px;
         }
     }
+
    }
 }
 
@@ -56,6 +54,47 @@ main {
 
     h2 {
         text-align: center;
+        font-size: 40px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+    }
+
+    h3 {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+.what {
+   
+}
+
+.games {
+
+    @include list;
+
+    li {
+        border: none;
+    }
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+
+table {
+
+    th {
+        td {
+            text-align: center;
+        }
+    }
+    td {
+        padding: 10px;
     }
 }
 
@@ -66,14 +105,17 @@ footer {
     
     .contact {
         border-right: 2px solid black;
+        padding: 20px;
 
         a {
             text-decoration: none;
+            font-size: 20px;
         }
     }
 
     .info {
         margin-left: auto;
         border-left: 2px solid black;
+        padding: 20px;
     }
 }
