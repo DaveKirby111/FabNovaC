@@ -5,7 +5,7 @@
     
     $nav = [
         "/" => "home", 
-        "lore.php" => "lore",
+        "mythology.php" => "mythology",
         "games.php" => "games",
         "characters.php" => "characters",
         "gallery.php" => "gallery",

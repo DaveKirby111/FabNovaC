@@ -8,7 +8,12 @@
 
 <div class="content">
 
-<h2>lore</h2>
+<h2>final fantasy type-0</h2>
+
+<section class="story">
+
+<h3>story:</h3>
+</section>
 
 </div>
 

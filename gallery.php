@@ -8,7 +8,7 @@
 
 <div class="content">
 
-<h2>welcome</h2>
+<h2>gallery</h2>
 
 </div>
 

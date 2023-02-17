@@ -8,7 +8,12 @@
 
 <div class="content">
 
-<h2>characters</h2>
+<h2>final fantasy versus XIII</h2>
+
+<section class="story">
+
+<h3>story:</h3>
+</section>
 
 </div>
 

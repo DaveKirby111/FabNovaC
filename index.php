@@ -12,7 +12,7 @@
 
 <section class="what">
 
-<h3>what is fabula nova crystallis?</h3>
+<h3>What is Fabula Nova Crystallis?</h3>
 
 <p>It is a series of final fantasy games that consist of different worlds, stories and characters but tied together by a shared mythology. The development teams of each game were able to adapt the mythos to fit the story of their game so the continuity between them is not consistent.</p>
 
@@ -20,14 +20,14 @@
 
 <section class="games">
 
-<h3>the games connected to fabula nova crystallis:</h3>
+<h3>The games connected to Fabula Nova Crystallis:</h3>
 
 <table>
-    <th>
-        <td>title</td>
-        <td>release</td>
-        <td>platform</td>
-    </th>
+    <tr>
+        <th>title</th>
+        <th>release</th>
+        <th>platform</th>
+    </tr>
     <tr>
         <td>final fantasy XIII</td>
         <td>
@@ -77,16 +77,6 @@
             </ul>
         </td>
         <td>N/A</td>
-    </tr>
-    <tr>
-        <td>final fantasy XV</td>
-        <td>
-            <ul>
-                <li>Jap: Nov. 2016</li>
-                <li>USA: Nov. 2016</li>
-            </ul>
-        </td>
-        <td>Playstation 4, Xbox One, PC, Google Stadia</td>
     </tr>
 </table>
 
