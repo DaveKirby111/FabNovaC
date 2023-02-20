@@ -7,7 +7,6 @@
         "/" => "home", 
         "mythology.php" => "mythology",
         "games.php" => "games",
-        "characters.php" => "characters",
         "gallery.php" => "gallery",
     ];
 

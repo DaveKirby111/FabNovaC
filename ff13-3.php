@@ -10,6 +10,8 @@
 
 <h2>lightning returns</h2>
 
+<section class="characters"></section>
+
 <section class="story">
 
 <h3>story:</h3>

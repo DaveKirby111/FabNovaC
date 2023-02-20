@@ -4,6 +4,15 @@
 
 <?php require "nav.php"; ?>
 
+<?php require "dbconnect.php"; ?>
+
+<?php 
+
+$db = new database();
+$xiii = $db->query("select * from ff13;");
+
+?>
+
 <main>
 
 <div class="content">
@@ -19,6 +28,24 @@
 <p>Anima made two humans from the village of Oerba l'Cie in order to attack Cocoon. They were meant to become the beast Ragnarok and destroy Cocoon. Vanille couldn't go through with it and Fang became an incomplete Ragnarok, only able to dent the outer shell of Cocoon. Fang and Vanille were turned into crystal afterward.</p>
 
 </section>
+
+
+<section class="characters">
+
+<h3>characters:</h3>
+
+<?php
+
+foreach($xiii as $char) :
+
+?>
+
+<p><?php echo $char['character']; ?> = <?php echo $char['desc']; ?></p>
+
+<?php endforeach; ?>
+
+</section>
+
 
 <section class="story">
 

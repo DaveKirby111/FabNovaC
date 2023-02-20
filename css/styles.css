@@ -70,25 +70,23 @@ main {
 .games ul li a {
   text-decoration: none;
 }
-.games li {
-  border: none;
-}
 
 table {
   border-collapse: collapse;
-  width: 50%;
+  width: 100%;
   text-transform: capitalize;
 }
 table th, table td {
   border: 1px solid black;
-  padding: 5px;
 }
 table th {
   text-align: center;
   font-size: 20px;
+  padding: 5px;
 }
 table td {
-  text-align: left;
+  text-align: center;
+  vertical-align: middle;
 }
 table tr:nth-child(odd) {
   background-color: white;
