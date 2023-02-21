@@ -48,16 +48,18 @@ main {
     min-height: 100vh;
 }
 
+h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
 .content {
     flex: 1;
     padding: 20px;
-
-    h2 {
-        text-align: center;
-        font-size: 35px;
-        margin-bottom: 30px;
-        text-transform: capitalize;
-    }
+    margin-left: 150px;
+    margin-right: 150px;
 
     h3 {
         margin-bottom: 20px;
@@ -121,6 +123,7 @@ footer {
         a {
             text-decoration: none;
             font-size: 20px;
+            text-transform: capitalize;
         }
     }
 
@@ -128,5 +131,6 @@ footer {
         margin-left: auto;
         border-left: 2px solid black;
         padding: 20px;
+        text-transform: capitalize;
     }
 }

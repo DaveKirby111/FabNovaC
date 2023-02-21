@@ -19,6 +19,22 @@ $xiii = $db->query("select * from ff13;");
 
 <h2>final fantasy XIII</h2>
 
+<section class="characters">
+
+<h3>characters:</h3>
+
+<?php
+
+foreach($xiii as $char) :
+
+?>
+
+<p><?php echo $char['character']; ?>: <?php echo $char['desc']; ?></p>
+
+<?php endforeach; ?>
+
+</section>
+
 <section class="war">
 
 <h3>War of Transgression:</h3>
@@ -30,26 +46,12 @@ $xiii = $db->query("select * from ff13;");
 </section>
 
 
-<section class="characters">
-
-<h3>characters:</h3>
-
-<?php
-
-foreach($xiii as $char) :
-
-?>
-
-<p><?php echo $char['character']; ?> = <?php echo $char['desc']; ?></p>
-
-<?php endforeach; ?>
-
-</section>
-
-
 <section class="story">
 
 <h3>story:</h3>
+
+<p>After her sister was made into a l'Cie, Lightning boards a purge train in order to find her. After joining up with others they are branded as l'Cie. Final Fantasy XIII is the story of an unlikely group of characters thrown together and fight to defy the fate placed on them. The fal'Cie Barthandelus, wants them to become Ragnarok and bring Cocoon crashing into Gran Pulse. The amount of dead passing into the Unseen Realm would force open the door and bring back the maker.</p>
+
 </section>
 
 </div>
