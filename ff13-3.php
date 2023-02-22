@@ -34,6 +34,11 @@ foreach($LR as $char) :
 <section class="story">
 
 <h3>story:</h3>
+
+<p>After being awoken from crystal statis by Bhunivelze, Lightning is made the savior and tasked with saving as many souls as possible. Fang and Vanille were also freed from being crystal and given shelter by the holy order in a place called Luxerion. It was discovered that Vanille was able to hear the souls of the dead and was made a saint by the holy order. They holy order intend to sacrifice Vanille in a ritual to purify the souls of the dead. Snow became the ruler a town called Yusnaan, although he stays locked in his palace and only shows himself to watch over their nightly festivities.</p>
+
+<p>At the end of FF13-2, chaos was unleashed on the world. People no longer age and it is only a matter of days until the world ends. Lightning has to save souls so that they can be reborn in a new world. </p>
+
 </section>
 
 </div>

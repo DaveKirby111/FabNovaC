@@ -9,6 +9,7 @@ require "dbconnect.php";
 
 $db = new database();
 $type = $db->query("select * from type;");
+$nations = $db->query("select * from nations;");
 ?>
 
 <main>
@@ -25,7 +26,7 @@ $type = $db->query("select * from type;");
 foreach($type as $char) :
 ?>
 
-<p><?php echo $char['character']; ?>: <?php echo $char['desc']; ?></p>
+<p><?php echo $char['character']; ?>: [<?php echo $char['weapon']; ?>] <?php echo $char['desc']; ?></p>
 
 <?php endforeach; ?>
 
@@ -34,6 +35,30 @@ foreach($type as $char) :
 <section class="story">
 
 <h3>story:</h3>
+
+<p>The world is called Orience and is divided into four nations. Each nation has their own crystal that grants them unique power. The four nations have always been at war with one another. There is a legend in Orience of a savior called Agito. It is said to appear during an apocalpse called Tempus Finis. It was the will of the Vermilion Bird crystal that the nation of Rubrum train cadets to become Agito.</p>
+
+<table class="kingdoms">
+    <tr>
+        <th>kingdom</th>
+        <th>crystal</th>
+        <th>power</th>
+    </tr>
+
+    <?php
+    foreach($nations as $nation) :
+    ?>
+
+    <tr>
+        <td><?php echo $nation['nation']; ?></td>
+        <td><?php echo $nation['crystal']; ?></td>
+        <td><?php echo $nation['power']; ?></td>
+    </tr>
+
+    <?php endforeach; ?>
+
+</table>
+
 </section>
 
 </div>
