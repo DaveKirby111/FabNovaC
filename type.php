@@ -26,7 +26,7 @@ $nations = $db->query("select * from nations;");
 foreach($type as $char) :
 ?>
 
-<p><?php echo $char['character']; ?>: [<?php echo $char['weapon']; ?>] <?php echo $char['desc']; ?></p>
+<p><bold><?php echo $char['character']; ?>:</bold> [<?php echo $char['weapon']; ?>] <?php echo $char['desc']; ?></p>
 
 <?php endforeach; ?>
 
@@ -37,6 +37,13 @@ foreach($type as $char) :
 <h3>story:</h3>
 
 <p>The world is called Orience and is divided into four nations. Each nation has their own crystal that grants them unique power. The four nations have always been at war with one another. There is a legend in Orience of a savior called Agito. It is said to appear during an apocalpse called Tempus Finis. It was the will of the Vermilion Bird crystal that the nation of Rubrum train cadets to become Agito.</p>
+
+<h3>themes:</h3>
+
+<ul>
+    <li>War's effect on the world</li>
+    <li>War's influence on the young</li>
+</ul>
 
 <table class="kingdoms">
     <tr>

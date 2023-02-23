@@ -29,7 +29,7 @@ foreach($xiii as $char) :
 
 ?>
 
-<p><?php echo $char['character']; ?>: <?php echo $char['desc']; ?></p>
+<p><bold><?php echo $char['character']; ?>:</bold> <?php echo $char['desc']; ?></p>
 
 <?php endforeach; ?>
 
@@ -51,6 +51,13 @@ foreach($xiii as $char) :
 <h3>story:</h3>
 
 <p>After her sister was made into a l'Cie, Lightning boards a purge train in order to find her. After joining up with others they are branded as l'Cie. Final Fantasy XIII is the story of an unlikely group of characters thrown together and fight to defy the fate placed on them. The fal'Cie Barthandelus, wants them to become Ragnarok and bring Cocoon crashing into Gran Pulse. The amount of dead passing into the Unseen Realm would force open the door and bring back the maker.</p>
+
+<h3>themes:</h3>
+
+<ul>
+    <li>Family bonds</li>
+    <li>Overcoming your flaws</li>
+</ul>
 
 </section>
 

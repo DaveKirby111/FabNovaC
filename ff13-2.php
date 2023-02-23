@@ -26,7 +26,7 @@
 foreach($xiii2 as $char) :
 ?>
 
-<p><?php echo $char['character']; ?>: <?php echo $char['desc']; ?></p>
+<p><bold><?php echo $char['character']; ?>:</bold> <?php echo $char['desc']; ?></p>
 
 <?php endforeach; ?>
 

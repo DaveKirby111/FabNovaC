@@ -8,7 +8,6 @@
         "terms.php" => "terms",
         "mythology.php" => "mythology",
         "games.php" => "games",
-        "gallery.php" => "gallery",
     ];
 
     foreach($nav as $key => $link) :

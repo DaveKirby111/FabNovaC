@@ -15,15 +15,19 @@ $vocab = $db->query("select * from vocabulary;");
 
 <div class="content">
 
-<h2>terms:</h2>
+<h2>terms</h2>
+
+<section class="vocab">
 
 <?php 
 foreach($vocab as $term) :
 ?>
 
-<p><?php echo $term["term"]; ?> = <?php echo $term["definition"]; ?></p>
+<p><bold><?php echo $term["term"]; ?> =</bold> <?php echo $term["definition"]; ?></p>
 
 <?php endforeach; ?>
+
+</section>
 
 </div>
 

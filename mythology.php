@@ -8,9 +8,9 @@
 
 <div class="content">
 
-<section class="myth">
-
 <h2>mythology</h2>
+
+<section class="myth">
 
 <p>In the beginning there was the creator Mwynn who was killed by her son Bhunivelze to gain control of the Mortal Realm. When she died, Mwynn was sent to the Unseen Realm where all souls go. Bhunivelze believed that Mwynn had cursed the world with mortality and so he created three beings (fal'Cie) to carry out specific tasks. Bhunivelze could not get to the Unseen Realm without giving up control of the Mortal Realm, so he created Pulse to search for the door. Next he created Etro, who looked too much like Mwynn and so she was discarded with no power or a task to complete. Lastly he created Lindzei to watch over him as he slept, and awaken him when Pulse found the door to the Unseen Realm.</p>
 
