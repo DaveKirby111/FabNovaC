@@ -20,6 +20,11 @@
 
 </section>
 
+<div class="img-container">
+<img src="resources/images/Etro's Gate.jpeg" alt="gate">
+<div class="overlay">Etro's Gate</div>
+</div>
+
 </div>
 
 </main>

@@ -33,6 +33,40 @@ main {
   min-height: 100vh;
 }
 
+.bhunivelze {
+  height: 900px;
+}
+
+.gallery img {
+  height: 300px;
+  width: 300px;
+}
+
+img {
+  height: 460px;
+  width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overlay {
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+}
+
 h2 {
   text-align: center;
   font-size: 35px;
@@ -79,29 +113,29 @@ section {
   text-decoration: none;
 }
 
-table {
+.fncgames {
   border-collapse: collapse;
   width: 100%;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
-table th, table td {
+.fncgames th, .fncgames td {
   border: 1px solid black;
 }
-table th {
+.fncgames th {
   text-align: center;
   font-size: 25px;
   padding: 15px;
 }
-table td {
+.fncgames td {
   text-align: center;
   vertical-align: middle;
   padding: 5px;
 }
-table tr:nth-child(odd) {
+.fncgames tr:nth-child(odd) {
   background-color: white;
 }
-table tr:nth-child(even) {
+.fncgames tr:nth-child(even) {
   background-color: lightgray;
 }
 

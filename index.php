@@ -29,7 +29,7 @@
 
 <h3>The games connected to Fabula Nova Crystallis:</h3>
 
-<table>
+<table class="fncgames">
 
     <tr>
         <th>title</th>

@@ -29,6 +29,11 @@ foreach($vocab as $term) :
 
 </section>
 
+<div class="img-container">
+<img src="resources/images/Bhunivelze.png" alt="bhunivelze" class="bhunivelze">
+<div class="overlay">Bhunivelze</div>
+</div>
+
 </div>
 
 </main>
