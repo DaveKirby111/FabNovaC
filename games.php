@@ -10,15 +10,29 @@
 
 <h2>games</h2>
 
-<a href="ff13.php">final fantasy XIII</a>
+<section class="fnc">
 
-<a href="ff13-2.php">final fantasy XIII-2</a>
+<a href="ff13.php">
+    <img src="resources/images/FF13.jpg" alt="ff13">
+</a>
 
-<a href="ff13-3.php">lightning returns</a>
+<a href="ff13-2.php">
+    <img src="resources/images/FinalFantasy_XIII-2_Logo.webp" alt="13-2">
+</a>
 
-<a href="type.php">final fantasy type-0</a>
+<a href="ff13-3.php">
+    <img src="resources/images/Lightning-Returns-Final-Fantasy-XIII.webp" alt="13-3">
+</a>
 
-<a href="versus.php">final fantasy versus XIII</a>
+<a href="type.php">
+    <img src="resources/images/capsule_616x353.jpg" alt="type">
+</a>
+
+<a href="versus.php">
+    <img src="resources/images/versus.jpg" alt="versus">
+</a>
+
+</section>
 
 </div>
 

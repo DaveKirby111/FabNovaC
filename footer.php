@@ -1,3 +1,22 @@
+<style>
+    footer {
+        background-image: url("resources/images/Valhalla_03.jpeg");
+        background-size: 100% auto;
+    }
+
+    .contact {
+        background-image: url("resources/images/fnc-bg3.jpeg");
+    }
+
+    .contact a {
+        color: black;
+    }
+
+    .info {
+        background-image: url("resources/images/fnc-bg3.jpeg");
+    }
+</style>
+
 <footer>
 
     <div class="contact">

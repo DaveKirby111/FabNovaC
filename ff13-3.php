@@ -15,7 +15,7 @@ $LR = $db->query("select * from LR;");
 
 <div class="content">
 
-<h2>lightning returns</h2>
+<img src="resources/images/13-3.png" alt="13-3" class="headimg">
 
 <section class="characters">
 

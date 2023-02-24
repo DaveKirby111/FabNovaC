@@ -16,7 +16,7 @@
 
 <div class="content">
 
-<h2>final fantasy XIII-2</h2>
+<img src="resources/images/13-2.png" alt="13-2" class="headimg">
 
 <section class="characters">
 

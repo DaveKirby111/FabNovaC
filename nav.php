@@ -1,3 +1,9 @@
+<style>
+    nav {
+        background-image: url("resources/images/fnc-bg3.jpeg");
+    }
+</style>
+
 <nav>
 
 <ul>

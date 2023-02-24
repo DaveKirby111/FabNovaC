@@ -8,7 +8,7 @@
 
 <div class="content">
 
-<h2>final fantasy versus XIII</h2>
+<img src="resources/images/transp-versus.png" alt="transp-versus" class="headimg">
 
 <section class="dev">
 

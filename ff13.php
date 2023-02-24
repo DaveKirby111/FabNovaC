@@ -17,7 +17,7 @@ $xiii = $db->query("select * from ff13;");
 
 <div class="content">
 
-<h2>final fantasy XIII</h2>
+<img src="resources/images/ff13-light.png" alt="ff13light" class="headimg">
 
 <section class="characters">
 

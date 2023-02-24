@@ -16,7 +16,7 @@ $nations = $db->query("select * from nations;");
 
 <div class="content">
 
-<h2>final fantasy type-0</h2>
+<img src="resources/images/type0.png" alt="type0" class="headimg">
 
 <section class="characters">
 
