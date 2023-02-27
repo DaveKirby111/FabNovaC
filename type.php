@@ -10,6 +10,11 @@ require "dbconnect.php";
 $db = new database();
 $type = $db->query("select * from type;");
 $nations = $db->query("select * from nations;");
+$images1 = $db->query("select * from images where id in (1, 8, 14);");
+$images2 = $db->query("select * from images where id in (7, 11, 5);");
+$images3 = $db->query("select * from images where id in (18, 19, 4);");
+$images4 = $db->query("select * from images where id in (3, 22, 25);");
+$images5 = $db->query("select * from images where id in (15, 10);");
 ?>
 
 <main>
@@ -67,6 +72,87 @@ foreach($type as $char) :
 </table>
 
 </section>
+
+
+<table class="gallery-type">
+
+<tr>
+    <?php foreach($images1 as $image1) :?>
+
+        <td>
+        <div class="img-container">
+            <a href="<?php echo $image1['filepath']; ?>" target="_blank">
+            <img src="<?php echo $image1['filepath']; ?>" alt="13">
+            </a>
+        <div class="overlay"><?php echo $image1['filename']; ?></div>
+        </div>
+        </td>
+
+    <?php endforeach; ?>
+</tr>
+
+<tr>
+    <?php foreach($images2 as $image2) :?>
+
+        <td>
+        <div class="img-container">
+            <a href="<?php echo $image2['filepath']; ?>" target="_blank">
+            <img src="<?php echo $image2['filepath']; ?>" alt="13">
+            </a>
+        <div class="overlay"><?php echo $image2['filename']; ?></div>
+        </div>
+        </td>
+
+    <?php endforeach; ?>
+</tr>
+
+<tr>
+    <?php foreach($images3 as $image3) :?>
+
+        <td>
+        <div class="img-container">
+            <a href="<?php echo $image3['filepath']; ?>" target="_blank">
+            <img src="<?php echo $image3['filepath']; ?>" alt="13">
+            </a>
+        <div class="overlay"><?php echo $image3['filename']; ?></div>
+        </div>
+        </td>
+
+    <?php endforeach; ?>
+</tr>
+
+<tr>
+    <?php foreach($images4 as $image4) :?>
+
+        <td>
+        <div class="img-container">
+            <a href="<?php echo $image4['filepath']; ?>" target="_blank">
+            <img src="<?php echo $image4['filepath']; ?>" alt="13">
+            </a>
+        <div class="overlay"><?php echo $image4['filename']; ?></div>
+        </div>
+        </td>
+
+    <?php endforeach; ?>
+</tr>
+
+<tr>
+    <?php foreach($images5 as $image5) :?>
+
+        <td>
+        <div class="img-container">
+            <a href="<?php echo $image5['filepath']; ?>" target="_blank">
+            <img src="<?php echo $image5['filepath']; ?>" alt="13">
+            </a>
+        <div class="overlay"><?php echo $image5['filename']; ?></div>
+        </div>
+        </td>
+
+    <?php endforeach; ?>
+</tr>
+
+</table>
+
 
 </div>
 

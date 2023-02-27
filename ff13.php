@@ -10,6 +10,8 @@
 
 $db = new database();
 $xiii = $db->query("select * from ff13;");
+$images1 = $db->query("select * from images where id in (9, 16, 20);");
+$images2 = $db->query("select * from images where id in (6, 23, 24);");
 
 ?>
 
@@ -61,66 +63,49 @@ foreach($xiii as $char) :
 
 </section>
 
-<div class="13">
 
 <table class="gallery">
     <tr>
+
+    <?php foreach($images1 as $image1) : ?>
+
         <td>
 
         <div class="img-container">
-            <a href="resources/images/light.jpg" target="_blank">
-        <img src="resources/images/light.jpg" alt="light">
-            </a>
-        <div class="overlay">Lightning</div>
+        <a href="<?php echo $image1['filepath']; ?>" target="_blank">
+            <img src="<?php echo $image1['filepath']; ?>" alt="13">
+        </a>
+        <div class="overlay"><?php echo $image1['filename']; ?></div>
         </div>
 
         </td>
-        <td>
+       
+    <?php endforeach; ?>
 
-        <div class="img-container">
-            <img src="resources/images/sazh.jpg" alt="sazh">
-            <div class="overlay">Sazh</div>
-        </div>
-
-        </td>
-        <td>
-
-        <div class="img-container">
-            <img src="resources/images/snow.jpeg" alt="snow">
-            <div class="overlay">Snow</div>
-        </div>
-
-        </td>
     </tr>
+
     <tr>
+
+    <?php foreach($images2 as $image2) : ?>
+
         <td>
 
         <div class="img-container">
-            <img src="resources/images/Fang.jpeg" alt="fang">
-            <div class="overlay">Fang</div>
+            <a href="<?php echo $image2['filepath']; ?>" target="_blank">
+            <img src="<?php echo $image2['filepath']; ?>" alt="13">
+            </a>
+        <div class="overlay"><?php echo $image2['filename']; ?></div>
         </div>
 
         </td>
-        <td>
 
-        <div class="img-container">
-            <img src="resources/images/vanille1.jpg" alt="vanille">
-            <div class="overlay">Vanille</div>
-        </div>
 
-        </td>
-        <td>
+    <?php endforeach; ?>
 
-        <div class="img-container">
-            <img src="resources/images/Hope_Estheim.jpeg" alt="hope">
-            <div class="overlay">Hope</div>
-        </div>
-
-        </td>
     </tr>
+    
 </table>
 
-</div>
 
 </div>
 

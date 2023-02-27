@@ -10,6 +10,8 @@
 
 <h2>contact</h2>
 
+<div class="send-contact">
+
 <form action="email.php" class="e-mail" method="post">
     <label for="email">E-mail:</label><br><br>
     <input type="email" name="email" id="email">
@@ -28,6 +30,8 @@
 
     <button type="submit">Submit</button>
 </form>
+
+</div>
 
 </div>
 

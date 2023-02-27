@@ -15,6 +15,8 @@
 
 <div class="content">
 
+<img src="resources/images/fabnc.jpg" alt="fabnc">
+
 <h2>welcome</h2>
 
 <section class="what">

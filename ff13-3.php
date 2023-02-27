@@ -41,6 +41,25 @@ foreach($LR as $char) :
 
 </section>
 
+
+<table class="gallery-2">
+    <tr>
+        <td>
+
+        <div class="img-container">
+            <a href="resources/images/lightning.jpg" target="_blank">
+        <img src="resources/images/lightning.jpg" alt="lightning">
+            </a>
+        <div class="overlay">Lightning</div>
+        </div>
+
+        </td>
+       
+    </tr>
+   
+</table>
+
+
 </div>
 
 </main>

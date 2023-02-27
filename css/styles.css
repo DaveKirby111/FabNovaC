@@ -24,22 +24,32 @@ nav ul li a {
   color: black;
 }
 nav ul li a:hover {
-  background-image: linear-gradient(rgb(247, 155, 244), white);
+  color: white;
+  text-shadow: 2px 2px 2px pink;
 }
 
 main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-image: linear-gradient(lightblue, white, lightblue);
 }
 
 .bhunivelze {
   height: 900px;
 }
 
-.gallery img {
+.gallery img, .gallery-versus img, .gallery-type img {
   height: 300px;
   width: 300px;
+}
+.gallery td, .gallery-versus td, .gallery-type td {
+  padding: 10px;
+}
+
+.gallery-2, .gallery-versus, .gallery-type {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img {
@@ -52,7 +62,6 @@ img {
 
 .overlay {
   bottom: 0;
-  background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
   color: #f1f1f1;
   transition: 0.5s ease;
@@ -113,29 +122,29 @@ section {
   text-decoration: none;
 }
 
-.fncgames {
+.fncgames, .kingdoms {
   border-collapse: collapse;
   width: 100%;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
-.fncgames th, .fncgames td {
+.fncgames th, .fncgames td, .kingdoms th, .kingdoms td {
   border: 1px solid black;
 }
-.fncgames th {
+.fncgames th, .kingdoms th {
   text-align: center;
   font-size: 25px;
   padding: 15px;
 }
-.fncgames td {
+.fncgames td, .kingdoms td {
   text-align: center;
   vertical-align: middle;
   padding: 5px;
 }
-.fncgames tr:nth-child(odd) {
+.fncgames tr:nth-child(odd), .kingdoms tr:nth-child(odd) {
   background-color: white;
 }
-.fncgames tr:nth-child(even) {
+.fncgames tr:nth-child(even), .kingdoms tr:nth-child(even) {
   background-color: lightgray;
 }
 
@@ -148,6 +157,7 @@ section {
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
+  border: 2px solid black;
 }
 .e-mail #email {
   width: 500px;
@@ -164,7 +174,7 @@ bold {
 
 .fnc img {
   width: 100%;
-  height: 370px;
+  height: 300px;
   margin-bottom: 20px;
 }
 
@@ -179,6 +189,10 @@ footer .contact a {
   text-decoration: none;
   font-size: 20px;
   text-transform: capitalize;
+}
+footer .contact a:hover {
+  color: white;
+  text-shadow: 2px 2px 2px pink;
 }
 footer .info {
   margin-left: auto;

@@ -4,6 +4,15 @@
 
 <?php require "nav.php"; ?>
 
+<?php require "dbconnect.php"; ?>
+
+<?php 
+
+$db = new database();
+$images = $db->query("select * from images where id in (12, 21);");
+
+?>
+
 <main>
 
 <div class="content">
@@ -20,6 +29,28 @@
 
 <p>In 2012, Versus XIII was rebranded within the company to be Final Fantasy XV; the public did not become aware of this until E3 2013. Development also shifted focus to next-gen consoles. The game was about 25% complete at the time.</p>
 </section>
+
+<table class="gallery-versus">
+    <tr>
+        <?php foreach($images as $image) : ?>
+            
+        <td>
+
+        <div class="img-container">
+            <a href="<?php echo $image['filepath']; ?>" target="_blank">
+            <img src="<?php echo $image['filepath']; ?>" alt="versus">
+            </a>
+        <div class="overlay"><?php echo $image['filename']; ?></div>
+        </div>
+
+        </td>
+
+        <?php endforeach; ?>
+       
+    </tr>
+   
+</table>
+
 
 </div>
 

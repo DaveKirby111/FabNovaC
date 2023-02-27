@@ -10,6 +10,7 @@
 
     $db = new database();
     $xiii2 = $db->query("select * from ff132;");
+    $images = $db->query("select * from images where id in (17, 13, 2);");
 ?>
 
 <main>
@@ -43,6 +44,29 @@ foreach($xiii2 as $char) :
 <p>It ends with a final confrontation with Caius, who is killed by Noel. Etro's Gate is forced open and chaos spills out into the world. The world becomes timeless and Serah dies. Lightning sits upon Etro's throne and turns to crystal.</p>
 
 </section>
+
+<table class="gallery">
+    <tr>
+
+    <?php foreach(array_reverse($images) as $image) : ?>
+
+        <td>
+
+        <div class="img-container">
+            <a href="<?php echo $image['filepath']; ?>" target="_blank">
+           <img src="<?php echo $image['filepath']; ?>" alt="13-2">
+            </a>
+        <div class="overlay"><?php echo $image['filename']; ?></div>
+        </div>
+
+        </td>
+
+        <?php endforeach; ?>
+        
+    </tr>
+   
+</table>
+
 
 </div>
 
