@@ -4,8 +4,6 @@
 
 <?php require "nav.php"; ?>
 
-<main>
-
 <style>
 
     .content {
@@ -23,7 +21,13 @@
         padding: 5px;
     }
 
+    img {
+        object-fit: contain;
+    }
+
 </style>
+
+<main>
 
 <div class="content">
 
@@ -31,7 +35,7 @@
 
 <section class="fnc">
 
-<table>
+<table class="gallery">
     <tr>
         <td>
             <a href="ff13.php">

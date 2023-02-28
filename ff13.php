@@ -15,6 +15,12 @@ $images2 = $db->query("select * from images where id in (6, 23, 24);");
 
 ?>
 
+<style>
+    .headimg {
+       object-fit: contain;
+    }
+</style>
+
 <main>
 
 <div class="content">

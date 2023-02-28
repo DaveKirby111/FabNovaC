@@ -8,6 +8,10 @@
 
 --------------*/
 
+body {
+    box-sizing: border-box;
+}
+
 // NAV
 
 nav {
@@ -32,6 +36,15 @@ nav {
     }
 
    }
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+
+    a {
+        text-transform: capitalize;
+    }
 }
 
 // CONTENT
@@ -76,6 +89,7 @@ main {
 img {
     height: 460px;
     width: 800px;
+    object-fit: cover;
 
     display: block;
     margin-left: auto;
@@ -101,6 +115,7 @@ img {
 h2 {
     text-align: center;
     font-size: 35px;
+    margin-top: 20px;
     margin-bottom: 30px;
     text-transform: capitalize;
 }
@@ -190,9 +205,11 @@ section {
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    padding: 30px;
 
-    border: 2px solid black;
+    label {
+        font-size: 20px;
+    }
 
     #email {
         width: 500px;
@@ -202,6 +219,12 @@ section {
     #subject {
         width: 500px;
         height: 25px;
+    }
+
+    button {
+        padding: 5px;
+        width: 100px;
+        cursor: pointer;
     }
 }
 
@@ -247,3 +270,70 @@ footer {
         text-transform: capitalize;
     }
 }
+
+// MEDIA 
+
+@media only screen and (min-width: 1200px) {
+    .mobile-nav {
+        display: none;
+    }
+  }
+
+
+
+  @media screen and (max-width: 400px) {
+    
+
+    nav {
+        display: none;
+    }
+
+    main {
+        height: auto;
+    }
+
+    .content {
+       flex-direction: column;
+        margin: 0;
+
+        .headimg {
+            width: 100%;
+            height: auto;
+        }
+        
+    }
+
+    .mobile-nav {
+        &:active {
+            color: white;
+            text-shadow: 2px 2px 2px pink;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery {
+        margin-bottom: 200px;
+
+        tr {
+            display: flex;
+            flex-direction: column;
+
+            td {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .send-contact {
+        .e-mail {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    }
+  

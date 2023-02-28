@@ -4,72 +4,48 @@
 
 <?php require "nav.php"; ?>
 
+<?php 
+
+require "dbconnect.php";
+
+$db = new database();
+$images1 = $db->query("select * from images where id in (28, 29, 30);");
+$images2 = $db->query("select * from images where id in (31, 32, 33);");
+
+?>
+
 <main>
 
 <div class="content">
 
 <h2>gallery</h2>
 
-<div class="13">
-
 <table class="gallery">
     <tr>
-        <td>
-
-        <div class="img-container">
-            <a href="resources/images/light.jpg" target="_blank">
-        <img src="resources/images/light.jpg" alt="light">
-            </a>
-        <div class="overlay">Lightning</div>
-        </div>
-
-        </td>
-        <td>
-
-        <div class="img-container">
-            <img src="resources/images/sazh.jpg" alt="sazh">
-            <div class="overlay">Sazh</div>
-        </div>
-
-        </td>
-        <td>
-
-        <div class="img-container">
-            <img src="resources/images/snow.jpeg" alt="snow">
-            <div class="overlay">Snow</div>
-        </div>
-
-        </td>
+        <?php foreach($images1 as $image1) : ?>
+            <td>
+                <div class="img-container">
+                    <a href="<?php echo $image1["filepath"]; ?>" target="_blank">
+                    <img src="<?php echo $image1["filepath"]; ?>" alt="">
+                    </a>
+                    <div class="overlay"><?php echo $image1["filename"]; ?></div>
+                </div>
+            </td>
+        <?php endforeach; ?>
     </tr>
     <tr>
-        <td>
-
-        <div class="img-container">
-            <img src="resources/images/Fang.jpeg" alt="fang">
-            <div class="overlay">Fang</div>
-        </div>
-
-        </td>
-        <td>
-
-        <div class="img-container">
-            <img src="resources/images/vanille1.jpg" alt="vanille">
-            <div class="overlay">Vanille</div>
-        </div>
-
-        </td>
-        <td>
-
-        <div class="img-container">
-            <img src="resources/images/Hope_Estheim.jpeg" alt="hope">
-            <div class="overlay">Hope</div>
-        </div>
-
-        </td>
+        <?php foreach($images2 as $image2) : ?>
+            <td>
+                <div class="img-container">
+                    <a href="<?php echo $image2["filepath"]; ?>" target="_blank">
+                    <img src="<?php echo $image2["filepath"]; ?>" alt="">
+                    </a>
+                    <div class="overlay"><?php echo $image2["filename"]; ?></div>
+                </div>
+            </td>
+        <?php endforeach; ?>
     </tr>
 </table>
-
-</div>
 
 </div>
 

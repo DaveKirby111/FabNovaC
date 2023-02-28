@@ -4,6 +4,12 @@
 
 <?php require "nav.php"; ?>
 
+<style>
+    .e-mail {
+        background-image: url("resources/images/fnc-bg3.jpeg");
+    }
+</style>
+
 <main>
 
 <div class="content">

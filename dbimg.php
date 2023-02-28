@@ -44,4 +44,4 @@ $pdo = null;
 
 ?>
 
-<button onclick="window.location.href='/';">Back</button>
+<button onclick="window.location.href='upload.php';">Back</button>

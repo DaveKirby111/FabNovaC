@@ -11,6 +11,12 @@ $db = new database();
 $LR = $db->query("select * from LR;");
 ?>
 
+<style>
+    .headimg {
+        object-fit: contain;
+    }
+</style>
+
 <main>
 
 <div class="content">

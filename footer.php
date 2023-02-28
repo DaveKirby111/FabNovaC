@@ -6,6 +6,9 @@
 
     .contact {
         background-image: url("resources/images/fnc-bg3.jpeg");
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .contact a {
