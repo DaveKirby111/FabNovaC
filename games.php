@@ -65,6 +65,11 @@
             <img src="resources/images/versus.jpg" alt="versus">
             </a>
         </td>
+        <td>
+            <a href="ff15.php">
+            <img src="resources/images/ff15.jpg" alt="ff15">
+            </a>
+        </td>
     </tr>
     
 </table>

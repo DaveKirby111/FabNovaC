@@ -10,11 +10,10 @@ require "dbconnect.php";
 $db = new database();
 $type = $db->query("select * from type;");
 $nations = $db->query("select * from nations;");
-$images1 = $db->query("select * from images where id in (1, 8, 14);");
-$images2 = $db->query("select * from images where id in (7, 11, 5);");
-$images3 = $db->query("select * from images where id in (18, 19, 4);");
-$images4 = $db->query("select * from images where id in (3, 22, 25);");
-$images5 = $db->query("select * from images where id in (15, 10);");
+$images1 = $db->query("select * from images where id in (1, 8, 14, 7);");
+$images2 = $db->query("select * from images where id in (11, 5, 18, 19);");
+$images3 = $db->query("select * from images where id in (4, 3, 22, 25);");
+$images4 = $db->query("select * from images where id in (10, 15);");
 ?>
 
 <main>
@@ -136,20 +135,6 @@ foreach($type as $char) :
     <?php endforeach; ?>
 </tr>
 
-<tr>
-    <?php foreach($images5 as $image5) :?>
-
-        <td>
-        <div class="img-container">
-            <a href="<?php echo $image5['filepath']; ?>" target="_blank">
-            <img src="<?php echo $image5['filepath']; ?>" alt="13">
-            </a>
-        <div class="overlay"><?php echo $image5['filename']; ?></div>
-        </div>
-        </td>
-
-    <?php endforeach; ?>
-</tr>
 
 </table>
 

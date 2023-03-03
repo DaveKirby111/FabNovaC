@@ -9,8 +9,8 @@
 require "dbconnect.php";
 
 $db = new database();
-$images1 = $db->query("select * from images where id in (28, 29, 30);");
-$images2 = $db->query("select * from images where id in (31, 32, 33);");
+$images1 = $db->query("select * from images where id in (28, 29, 30, 31);");
+$images2 = $db->query("select * from images where id in (32, 33, 48);");
 
 ?>
 
